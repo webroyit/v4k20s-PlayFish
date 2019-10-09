@@ -82,6 +82,26 @@ nav a#openup {
 }
   
 @media screen and (max-width: 550px) {
+    .hide-content{
+        display: none;
+    }
+
+    #showcase{
+        height: 50vh;
+    }
+
+    #showcase .container{
+        margin-top: 12vh;
+    }
+
+    #showcase h1{
+        font-size: 3rem;
+    }
+    
+    #showcase h2{
+        font-size: 1.6rem;
+    }
+
     nav {
         height: auto;
         border-bottom: 0;
