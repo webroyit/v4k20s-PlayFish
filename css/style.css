@@ -1,11 +1,67 @@
 @import url('https://fonts.googleapis.com/css?family=Tinos&display=swap');
 
+/* CSS variables */
+:root{
+    --primary-color: #e1341e;
+    --primary-color-hover: #df4a37;
+    --secondary-color: #493eacab;
+    --secondary-color-hover: #493eacab;
+    --light-color: #a8a5b4ab;
+}
+
 body {
     font-family: 'Tinos', sans-serif;
     background-color: #0f095a;
     color: azure;
     margin: 0;
     line-height: 1.6;
+}
+
+img{
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #a08888;
+}
+
+/* section */
+.section{
+    padding: 2rem 0;
+}
+
+.section-head{
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.section h3{
+    font-size: 2rem;
+}
+
+/* button */
+.btn{
+    padding: 1rem;
+    color: #fff;
+    display: inline-block;
+}
+
+.btn-primary{
+    background: var(--primary-color);
+}
+
+.btn-primary:hover{
+    background: var(--primary-color-hover);
+}
+
+/* text colors */
+.text-primary{
+    color: var(--primary-color);
+}
+
+.text-light{
+    color: var(--light-color);
 }
 
 /* showcase */
@@ -43,6 +99,14 @@ body {
 
 .lead{
     font-size: 1.3rem;
+}
+
+.mb{
+    margin-bottom: 1rem;
+}
+
+.mt{
+    margin-top: 1rem;
 }
 
 /* navigation */
