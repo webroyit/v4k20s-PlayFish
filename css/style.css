@@ -3,10 +3,49 @@
 body {
     font-family: 'Tinos', sans-serif;
     background-color: #ffffff;
+    color: azure;
     margin: 0;
     line-height: 1.6;
 }
 
+/* showcase */
+#showcase{
+    margin: 0;
+    padding: 0;
+    background: url('../img/showcase.jpe') no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* remove the white line on top of the narbar */
+    overflow-y: hidden;
+}
+
+#showcase .container{
+    margin-top: 20vh;
+}
+
+#showcase h1{
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+#showcase h2{
+    font-size: 2rem;
+}
+
+/* utility */
+.container{
+    max-width: 1180px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+}
+
+.lead{
+    font-size: 1.3rem;
+}
+
+/* navigation */
 nav {
     height: 40px;
     width: 100%;
