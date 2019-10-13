@@ -4,7 +4,7 @@
 :root{
     --primary-color: #e1341e;
     --primary-color-hover: #df4a37;
-    --secondary-color: #493eacab;
+    --secondary-color: #170c77ab;
     --secondary-color-hover: #493eacab;
     --light-color: #a8a5b4ab;
 }
@@ -55,6 +55,14 @@ a {
     background: var(--primary-color-hover);
 }
 
+.btn-secondary {
+    background: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+    background: var(--secondary-color-hover);
+}
+
 /* text colors */
 .text-primary{
     color: var(--primary-color);
@@ -62,6 +70,11 @@ a {
 
 .text-light{
     color: var(--light-color);
+}
+
+.bg-light{
+    background: var(--light-color);
+    color: rgb(10, 10, 10);
 }
 
 /* showcase */
