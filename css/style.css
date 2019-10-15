@@ -148,7 +148,7 @@ nav li {
 
 nav a {
     display: inline-block;
-    width: 100px;
+    width: 95px;
     text-align: center;
     text-decoration: none;
     padding: 10px 0;
@@ -164,7 +164,7 @@ nav a#openup {
     display: none;
 }
   
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 625px) {
     .hide-content{
         display: none;
     }

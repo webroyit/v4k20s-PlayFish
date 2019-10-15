@@ -6,13 +6,13 @@ $(function() {
     });
   
     $(window).resize(function(){
-        var w = $(this).width(); if(w > 550 && menu.is(':hidden')) {
+        var w = $(this).width(); if(w > 625 && menu.is(':hidden')) {
             menu.removeAttr('style');
         }
     });
   
     $('nav li').on('click', function(e) {                
-        var w = $(window).width(); if(w < 550 ) {
+        var w = $(window).width(); if(w < 625 ) {
             menu.slideToggle(); 
         }
     });
