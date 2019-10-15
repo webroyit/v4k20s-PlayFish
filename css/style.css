@@ -40,6 +40,11 @@ a {
     font-size: 2rem;
 }
 
+section#toys{
+    background: url(../img/background.png) no-repeat center/cover;
+    padding: 5rem 0;
+}
+
 /* button */
 .btn{
     padding: 1rem;
@@ -138,6 +143,7 @@ nav ul {
 
 nav li {
     display: inline;
+    float: left;
 }
 
 nav a {
@@ -151,7 +157,7 @@ nav a {
 }
 
 nav li:hover {
-    background-color: #493eacab;
+    background-color: #42ac3eab;
 }
 
 nav a#openup {
@@ -200,7 +206,7 @@ nav a#openup {
         border-bottom: 1px solid #555;
     }
     nav a:hover {
-      background: #493eacab;
+      background: #42ac3eab;
     }
     nav a#openup:after {
       content: "|||";
