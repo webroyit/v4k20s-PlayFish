@@ -116,6 +116,32 @@ section#toys{
     align-items: center;
 }
 
+/* Footer */
+.footer-cols{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.footer-cols ul{
+    list-style: none;
+}
+
+.footer-cols ul li:first-child{
+    font-size: 1.4rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px #444 solid;
+    margin-bottom: 1rem;
+}
+
+.footer-bottom{
+    background: #0a0250;
+    padding: 1rem;
+}
+
 /* utility */
 .container{
     max-width: 1180px;
@@ -134,6 +160,10 @@ section#toys{
 
 .mt{
     margin-top: 1rem;
+}
+
+.text-center{
+    text-align: center;;
 }
 
 /* navigation */
