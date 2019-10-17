@@ -6,7 +6,7 @@
     --primary-color-hover: #df4a37;
     --secondary-color: #170c77ab;
     --secondary-color-hover: #493eacab;
-    --light-color: #a8a5b4ab;
+    --light-color: #827f8bab;
 }
 
 body {
@@ -105,6 +105,15 @@ section#toys{
 
 #showcase h2{
     font-size: 2rem;
+}
+
+/* tank */
+.tank-grid{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    align-items: center;
 }
 
 /* utility */
