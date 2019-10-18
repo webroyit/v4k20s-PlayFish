@@ -279,3 +279,20 @@ nav a#openup {
 .cf {
     zoom: 1;
 }
+
+@media screen and (max-width: 800px) {
+    .tank-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .footer-cols{
+        display: none;
+    }
+}
+
+/* for landscape on phone */
+@media screen and (max-height: 600px) {
+    #showcase p.lead{
+        display: none;
+    }
+}
