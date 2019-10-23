@@ -7,6 +7,7 @@
     --secondary-color: #170c77ab;
     --secondary-color-hover: #493eacab;
     --light-color: #827f8bab;
+    --dark-color: #057017ab;
 }
 
 body {
@@ -82,6 +83,11 @@ section#toys{
     color: rgb(10, 10, 10);
 }
 
+.bg-dark{
+    background: var(--dark-color);
+    color: #f0f0f0;
+}
+
 /* showcase */
 #showcase{
     margin: 0;
@@ -114,6 +120,13 @@ section#toys{
     grid-template-columns: 1fr 1fr;
     text-align: left;
     align-items: center;
+}
+
+/* artwork */
+.artwork-grid{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
 }
 
 /* Footer */
@@ -282,6 +295,11 @@ nav a#openup {
 
 @media screen and (max-width: 800px) {
     .tank-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .artwork-grid{
+        grid-gap: 1rem;
         grid-template-columns: 1fr;
     }
 
