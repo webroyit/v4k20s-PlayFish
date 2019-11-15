@@ -11,6 +11,7 @@ const TypeWrite = function(txtElement, words, wait = 3000){
 // add a method to the fucntion
 TypeWrite.prototype.type = function(){
     // current index of word
+    // % to start at the first index if it reach to the end of the index of the array
     const current = this.index % this.words.length;
 
     // get the full text of the current word
@@ -28,8 +29,29 @@ TypeWrite.prototype.type = function(){
     // insert the text into span element
     this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
 
+    // type speed
+    let typeSpeed = 300;
+
+    if(this.isDeleting){
+        // speed up the typing
+        typeSpeed /= 2;
+    }
+
+    // if the word is complete
+    if(!this.isDeleting && this.txt === fullText){
+        // pause the change
+        typeSpeed = this.wait;
+        this.isDeleting = true;
+    }
+    // change the current word to the next word
+    else if(this.isDeleting && this.txt === ''){
+        this.isDeleting = false;
+        this.index++;
+        typeSpeed = 500;    // pause before start typing
+    }
+
     // update the client every .5 second
-    setTimeout(() => this.type(), 500)
+    setTimeout(() => this.type(), typeSpeed)
 }
 
 // excute the function when the page load
