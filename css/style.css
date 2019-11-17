@@ -179,6 +179,11 @@ section#toys{
     text-align: center;;
 }
 
+/* "outside of the span" > "inside the span" */
+.txt-type > .txt{
+    border-right: .15rem solid;
+}
+
 /* navigation */
 nav {
     height: 40px;
